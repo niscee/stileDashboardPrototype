@@ -6,6 +6,7 @@ import Box from "@material-ui/core/Box";
 import { SpinnerCircularSplit } from "spinners-react";
 import LoopIcon from "@material-ui/icons/Loop";
 import Dialog from "@material-ui/core/Dialog";
+import Timer from "./Timer";
 
 /* Main Base Component, receives props from subcomponent which is in Tiles folder, display UI according to received props. */
 const Tile = ({
@@ -31,7 +32,6 @@ const Tile = ({
   const { data, status, loadData, showMore, setShowMore } =
     Logic(getDataHandler);
 
-  console.log(data);
   return (
     <>
       <button onClick={() => loadData()} style={{ width: "100%" }}>
@@ -57,7 +57,9 @@ const Tile = ({
             )}
           </div>
           {status === "presentation" && (
-            <p className={headerSubTitle}>Status 09.59.41</p>
+            <p className={headerSubTitle} id="status">
+              {data && <Timer />}
+            </p>
           )}
         </Box>
         {/* Body UI */}

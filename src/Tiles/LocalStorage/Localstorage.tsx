@@ -37,7 +37,7 @@ const Nbn = () => {
         {payload && (
           <div>
             <p>{payload.title}</p>
-            <p>{payload.time}</p>
+            <p>{payload.Check}</p>
             <p>{payload.GHz}</p>
             <p>{payload.HighGHz}</p>
             <p>{payload.Mesh}</p>

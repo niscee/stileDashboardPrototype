@@ -2,10 +2,11 @@ import { useState } from "react";
 import { ReceivedPropsTypes } from "./Type";
 
 const Logic = (getDataHandler: ReceivedPropsTypes["getDataHandler"]) => {
-  const [data, setData] = useState<null | object>(null);
+  const [data, setData] = useState<null | { [k: string]: any }>(null);
   const [status, setStatus] = useState<string>("initial");
   const [showMore, setShowMore] = useState<boolean>(false);
 
+  // fetch api from database.
   const loadData = async () => {
     console.log("running");
     try {
@@ -18,7 +19,12 @@ const Logic = (getDataHandler: ReceivedPropsTypes["getDataHandler"]) => {
     }
   };
 
-  return { data, status, loadData, showMore, setShowMore };
+  // runs every certain time and returns last refresh time in minute e.g '5min ago.'
+  const getLastRefereshTime = (time: string) => {
+    console.log("time");
+  };
+
+  return { data, status, loadData, showMore, setShowMore, getLastRefereshTime };
 };
 
 export default Logic;

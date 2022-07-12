@@ -9,19 +9,19 @@ const datas = {
     PriNumber: "PRI3254243432",
     CVC: "CVC432432432",
     result: "GOOD",
-    staleAt: "2022-07-11T07:18:58Z",
+    time: new Date().toLocaleTimeString(),
     modalInfo:
       "Nischal lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, velscelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metusauctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, velscelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metusauctor fringilla.",
   },
   NBN: {
     title: "NBN",
-    time: "10:31:51",
+    Check: "Done",
     GHz: "Enabled (Up)",
     HighGHz: "Enabled (Up)",
     Mesh: "0 Extender",
     ConnectedDevice: 20,
     result: "GOOD",
-    staleAt: "2022-07-11T07:18:58Z",
+    time: new Date().toLocaleTimeString(),
   },
 };
 
