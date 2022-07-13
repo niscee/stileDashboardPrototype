@@ -4,7 +4,7 @@ import { TimerProps } from "./Type";
 const Timer = (props: TimerProps) => {
   const [timer, setTimer] = useState(0);
 
-  //gets timestamp from api and calculate the difference with current time and set the state.
+  //gets timestamp as a prop from tiles component[NBN, LocalStorage, etc.] which is fetched from api and calculate the difference with current time and set the state.
   const getCalculatedTime = () => {
     const prevTime = new Date(props.time).getTime();
     const currentTime = new Date().getTime();
@@ -14,8 +14,12 @@ const Timer = (props: TimerProps) => {
   };
 
   useEffect(() => {
-    const intervalId = setInterval(getCalculatedTime, 1000);
-    return () => clearInterval(intervalId);
+    if (timer < 6) {
+      const intervalId = setInterval(getCalculatedTime, 1000);
+      return () => clearInterval(intervalId);
+    } else {
+      return () => clearInterval();
+    }
   }, []);
 
   return <>Last Update: {timer <= 5 ? timer : `more than ${timer}`}min ago</>;

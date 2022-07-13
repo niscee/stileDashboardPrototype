@@ -10,7 +10,7 @@ const datas = {
     CVC: "CVC432432432",
     result: "GOOD",
     time: new Date(
-      "Wed Jul 13 2022 16:00:25 GMT+1000 (Australian Eastern Standard Time)"
+      "Wed Jul 13 2022 16:27:25 GMT+1000 (Australian Eastern Standard Time)"
     ),
     modalInfo:
       "Nischal lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, velscelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metusauctor fringilla. Aenean lacinia bibendum nulla sed consectetur. Praesent commodo cursus magna, velscelerisque nisl consectetur et. Donec sed odio dui. Donec ullamcorper nulla non metusauctor fringilla.",
