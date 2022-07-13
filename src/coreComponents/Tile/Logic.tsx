@@ -8,7 +8,6 @@ const Logic = (getDataHandler: ReceivedPropsTypes["getDataHandler"]) => {
 
   // fetch api from database.
   const loadData = async () => {
-    console.log("running");
     try {
       setStatus("loading");
       const res = await getDataHandler();

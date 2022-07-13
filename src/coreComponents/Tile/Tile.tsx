@@ -58,7 +58,7 @@ const Tile = ({
           </div>
           {status === "presentation" && (
             <p className={headerSubTitle} id="status">
-              {data && <Timer />}
+              {data && <Timer time={data.time} />}
             </p>
           )}
         </Box>

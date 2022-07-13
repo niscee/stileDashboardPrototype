@@ -1,13 +1,3 @@
-// export interface StateType {
-//   title: string;
-//   avc: string;
-//   TechnologyType: string;
-//   Username: string;
-//   FNNNumber: string;
-//   PriNumber: string;
-//   cvc: string;
-// }
-
 export interface ParameterType {
   payload: { [k: string]: any } | null;
 }

@@ -12,3 +12,7 @@ export interface ReceivedPropsTypes {
     setShowMore: React.Dispatch<React.SetStateAction<boolean>>
   ) => JSX.Element;
 }
+
+export interface TimerProps {
+  time: string;
+}
